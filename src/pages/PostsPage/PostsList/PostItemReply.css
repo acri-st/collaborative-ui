@@ -1,0 +1,47 @@
+
+.post-reply-item{
+    display: flex;
+    gap:10px;
+}
+    .post-reply-item .user-avatar{
+        width: 30px;
+        height: 30px;
+        flex: 0 0 auto;
+        border-radius: 100px;
+    }
+    
+    .post-reply-item-content{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        flex: 1 1 auto;
+    }
+        .post-reply-item-user{
+        }
+            .post-reply-item-user-info{
+                display: flex;
+                justify-content: space-between;
+            }
+                .post-reply-item-user-info-left{
+                }
+                    .post-reply-item-username{
+                        font-size: 13px;
+                        text-decoration: underline;
+                        color: var(--font-color);
+                    }
+                    .post-reply-item-time{
+                        opacity: 0.5;
+                        font-size: 11px;
+                    }
+                .post-reply-item-user-info-right{
+                }
+                    .post-reply-item-user-info-right .button{
+                        font-size: 9px;
+                    }
+        .post-reply-item-message p,
+        .post-reply-item-message{
+            font-size: 14px;
+        }
+        .post-reply-item-message p{
+            margin: 0;
+        }

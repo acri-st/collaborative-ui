@@ -1,0 +1,9 @@
+.posts-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.post-item-replies-reply .button{
+    align-self: flex-end;
+}

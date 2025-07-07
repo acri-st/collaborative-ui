@@ -1,0 +1,74 @@
+html{
+    --font-color: rgb(246, 246, 246);
+
+    --theme-color-1: rgb(239, 43, 137);
+    --theme-color-1: 239, 43, 137;
+    
+    --theme-color-2: rgb(123, 52, 219);
+    --theme-color-2: 123, 52, 219;
+    
+    --theme-color-red: rgb(197, 29, 60);
+    --theme-color-red: 197, 29, 60;
+
+    --theme-color-green: rgb(74, 150, 20);
+    --theme-color-green: 74, 150, 20;
+
+    --theme-color-blue: rgb(20, 143, 150);
+    --theme-color-blue: 20, 143, 150;
+
+    --theme-color-grey: rgb(104, 104, 104);
+    --theme-color-grey: 104, 104, 104;
+    
+    --background-color-1: rgb(16, 21, 40);
+    --background-color-1: 16, 21, 40;
+
+    --background-color-2: rgb(23, 27, 43);
+    --background-color-2: 23, 27, 43;
+    
+    --background-color-3: rgb(20, 41, 52);
+    --background-color-3: 20, 41, 52;
+
+    --background-color-4: rgb(20, 47, 59);
+    --background-color-4: 20, 47, 59;
+    
+    overflow: hidden;
+    height: 100vh;
+}
+body{
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+}
+body *{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/*  ==============================
+    BUTTONS
+    ============================== */
+
+/*  ==============================
+    LAYOUT
+    ============================== */
+.desp-background-1{
+    background: url('https://collaborative.desp-aas.acri-st.fr/assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.desp-background-2{
+    background: url('https://collaborative.desp-aas.acri-st.fr/assets/background-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*  ==============================
+    HEADER 
+    ============================== */
+
+/*  ==============================
+    FOOTER 
+    ============================== */

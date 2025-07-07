@@ -1,0 +1,26 @@
+.group-card-loading{
+    background-color: rgb(var(--loading-color-1));
+    cursor: default;
+}
+    .group-card-loading-image{
+        background-color: rgb(var(--loading-color-2));
+    }
+    
+    .group-card-loading-information{
+        width: 100%;
+        justify-content: space-between;
+    }
+        .group-card-loading-title{
+            flex:0 0 auto;
+            width: 80%;
+            height: 30px;
+            background-color: rgb(var(--loading-color-2));
+            border-radius: var(--loading-item-radius);
+        }
+        .group-card-loading-category{
+            flex:0 0 auto;
+            width: 80%;
+            height: 30px;
+            background-color: rgb(var(--loading-color-2));
+            border-radius: var(--loading-item-radius);
+        }

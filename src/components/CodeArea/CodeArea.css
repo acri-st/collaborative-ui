@@ -1,0 +1,31 @@
+.code-area{
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.editable-form-field.code-area-field{
+
+}
+.editable-form-field.code-area-field .form-field-value{
+    /* height: 100%; */
+    flex: 1 1 auto;
+    padding: 0px!important;
+}
+
+.editable-form-field.code-area-field .no-data-value{
+    padding:10px;
+}
+
+.code-area > div,
+.code-area > div > section{
+    height: 100%!important;
+}
+
+
+@media screen and (max-width: 1400px) {
+    
+    .editable-form-field.code-area-field{
+        min-height: 200px;
+    }
+}

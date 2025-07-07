@@ -1,0 +1,22 @@
+
+#catalog-filter-categories{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    min-height: 0;
+}
+    #catalog-filter-categories .catalog-filter-box-form{
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+        #catalog-filter-categories  .check-list{
+            height: auto;
+            flex:1;
+        }
+        #catalog-filter-categories #catalog-filter-categories-form{
+            max-height: 250px;
+            overflow: hidden;
+            transition: 0.2s ease-in-out;
+        }

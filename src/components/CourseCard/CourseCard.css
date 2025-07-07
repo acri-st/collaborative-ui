@@ -1,0 +1,87 @@
+.course-card{
+    position: relative;
+    overflow: hidden;
+    /* width: 350px; */
+    height: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:5px;
+    color:white;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.535); */
+    /* background-color: rgb(var(--background-color-1)); */
+}
+    .course-card-image{
+        flex:0 0 auto;
+        z-index: 5;
+        background-color: rgb(20, 42, 54);
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    
+    .course-card-information{
+        flex:1;
+        /* background-color: rgb(var(--background-color-1) , .5); */
+        margin-top: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .course-card-title{
+        /* color: rgb(var(--theme-color-1)); */
+        flex:0 0 auto;
+        padding: 0px 10px;
+        font-size: 16px;
+        /* height: 30px; */
+        line-height: 1.3em;
+        height: calc(1.2em * 2 + 15px);
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-align: justify;
+
+        border-radius: 3px;
+        /* border-bottom: 3px solid rgba(255, 255, 255, 0.1); */
+        /* background-color: rgba(255, 255, 255, 0.1); */
+        /* background-color: rgb(var(--theme-color-1) , .2); */
+
+        overflow: hidden;
+        min-height: 0px;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        
+
+        /* background-color: rgb(var(--background-color-2) , 1); */
+        /* background-color: rgb(var(--theme-color-2) , 1); */
+        /* background: linear-gradient(45deg, rgb(var(--theme-color-1) ,0.5) 0%, rgb(var(--theme-color-2), 0.5) 100% ); */
+        padding-top: 5px;
+        /* margin-left: 5px;
+        margin-right: 5px; */
+        margin-bottom: 5px;
+
+    }
+    .course-card-description{
+        /* flex:1 1 auto; */
+        text-align: justify;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        line-height: 1.4em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-height: 0px;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        max-height: calc(1.4em * 4 + 8px);
+        line-clamp: 4;
+        /* background-color: rgb(var(--background-color-1) , 1); */
+        border-radius: 10px;
+        /* opacity: 0.7; */
+    }

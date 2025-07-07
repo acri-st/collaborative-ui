@@ -1,0 +1,207 @@
+#desp-theme-header{
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    /* margin-right:100px; */
+    opacity: 0;
+    transform: translateY(calc(-100%));
+    transition: 0.4s;
+    background-color: rgb(var(--background-color-1), 0.7);
+    z-index: 100;
+    height: 60px;
+}
+    #desp-theme-header.visible{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    #desp-theme-header-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+.desp-theme-menu-route{
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+    .desp-theme-menu-route.active{
+        color: rgb(var(--theme-color-1));
+        opacity: 1;
+        font-weight: 800;
+    }
+    .desp-theme-menu-route:hover{
+        opacity: 1;
+    }
+
+    #desp-theme-header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1500px;
+        height: 100%;
+        margin: 0 auto;
+        /* position: relative; */
+    }
+    @media screen and (max-width: 1540px) {
+        #desp-theme-header-container{
+            width: calc(100% - 20px);
+        }
+    }
+        #desp-theme-header-logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+            #desp-theme-header-logo img{
+                height: 2.5em;
+            }
+            #desp-theme-header-logo label{
+                font-size: 1em;
+                height: 1em;
+                font-weight: 800;
+                cursor: inherit;
+            }
+
+    
+        #desp-theme-header-links{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%)  translateX(-50%);
+        }
+            @media screen and (max-width: 1050px) {
+                #desp-theme-header-links{
+                    display: none;
+                }
+            }
+
+            #desp-theme-header .desp-theme-menu-route{
+            }
+                .desp-theme-header-link-container{
+                    position: relative;
+                    padding: 0px 10px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                }
+                    .desp-theme-menu-route.active{
+                    }
+                .desp-theme-header-submenu{
+                    position: absolute;
+                    top: 100%;
+                    left: 0px;
+                    width: 200px;
+                    background-color: rgb(var(--background-color-1), 0.7);
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    flex-direction: column;
+                    transition: 0.3s;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                    #desp-theme-header-authentication:hover .desp-theme-header-submenu,
+                    .desp-theme-header-link-container:hover .desp-theme-header-submenu{
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                        .desp-theme-header-submenu .desp-theme-menu-route{
+                            cursor: pointer;
+                            padding: 10px 20px;
+                        }
+                        .desp-theme-header-submenu .desp-theme-menu-route:hover{
+                            background-color: rgb(var(--background-color-3));
+                        }
+#desp-theme-header-right{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+    #desp-theme-header-authentication{
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        #desp-theme-header-authentication .desp-theme-button{
+            /* min-width: 150px; */
+            font-size: 15px;
+            padding: 10px 50px;
+            align-self: center;
+        }
+            @media screen and (max-width: 1050px) {
+                #desp-theme-header-authentication .desp-theme-button{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100px;
+                    padding: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #desp-theme-header-authentication .desp-theme-button label{
+                    display: none;
+                }
+            }
+        #desp-theme-header-authentication .desp-theme-header-submenu{
+            left: auto;
+            right: 0px;
+        }
+
+        #desp-theme-header-menu-button{
+            margin-left: 10px;
+            padding: 0px 10px;
+            font-size: 26px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            /* width: 30px; */
+            height: 30px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 1050px) {
+            #desp-theme-header-menu-button{
+                display: flex;
+            }
+        }
+
+        #desp-theme-header-menu{
+            position: absolute;
+            top: 100%;
+            right: -10px;
+            width: 100vw;
+            height: calc(100vh - 60px);
+            background-color: rgb(var(--background-color-1));
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            box-sizing: border-box;
+            justify-content: space-around;
+            transition: 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }
+            #desp-theme-header-menu.open{
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .desp-theme-header-menu-link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                max-height: 100px;
+            }

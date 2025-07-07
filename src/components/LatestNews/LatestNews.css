@@ -1,0 +1,90 @@
+#latest-news{
+}
+
+#latest-news-articles{
+    width: 100%;
+    overflow: hidden;
+}
+    #latest-news-articles-container{
+        display: flex;
+        flex-wrap: nowrap;
+        /* transition: var(--transition-time); */
+        transition: 0.4s;
+    }
+
+    .article-card{
+        flex:1 0 calc(100% - 20px);
+        height: 280px;
+        /* width: 100%; */
+        background-color: rgb(var(--background-color-2));
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin:0px 10px;
+        position: relative;
+        /* width: ; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+        .article-card *{
+            position: relative;
+            z-index: 10;
+        }
+        .article-card:before{
+            z-index: 5px;
+            position: absolute;
+            background-color: rgb(0,0,0,0.4);
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            content:'';
+        }
+        .article-title{
+            font-size: 20px;
+            padding: 20px;
+            text-align: right;
+            font-weight: 800;
+        }
+        .article-date{
+            padding: 10px;
+            display: flex;
+            font-size: 14px;
+            letter-spacing: 1px;
+
+        }
+            .article-date svg{
+                font-size: 2.2em;
+                margin-right:10px;
+            }
+            .article-date-label{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                line-height: 1.2em;
+            }
+
+#latest-news-pagination{
+    display: flex;
+    margin-top:20px;
+    /* margin-left:auto; */
+    justify-content: flex-end;
+    margin-right:50px;
+}
+    #latest-news-pagination .pagination{
+        height: 14px;
+        width: 14px;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-radius: 1000px;
+        margin:0px 2px;
+        cursor: pointer;
+        /* transition: 0.2s; */
+    }
+    #latest-news-pagination .pagination.selected{
+        background: linear-gradient(-45deg, rgb(var(--theme-color-1)),  rgb(var(--theme-color-2)));
+        border: none;
+        /* height: 16px;
+        width: 16px; */
+    }

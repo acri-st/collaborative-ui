@@ -1,0 +1,39 @@
+.course-card-loading{
+    /* background-color: rgb(var(--loading-color-1)); */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin:5px;
+    border-radius: 5px;
+}
+    .course-card-loading-image{
+        height: 50%;
+        border-radius: var(--loading-item-radius);
+        background-color: rgb(var(--loading-color-1));
+        width: 100%;
+    }
+    .course-card-loading-title{
+        margin-top: 5px;
+        background-color: rgb(var(--loading-color-1));
+        height: 20px;
+        border-radius: var(--loading-item-radius);
+        bottom: 10px;
+        left:10px;
+        right:10px;
+    }
+        .course-card-loading-title.reduced{
+            width: 80%;
+        }
+    .course-card-loading-description{
+        margin-top: 5px;
+        background-color: rgb(var(--loading-color-2));
+        height: 18px;
+        border-radius: var(--loading-item-radius);
+        bottom: 10px;
+        left:10px;
+        right:10px;
+    }
+        .course-card-loading-title.reduced{
+            width: 80%;
+        }
+

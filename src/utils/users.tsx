@@ -1,0 +1,1 @@
+export const userProfileLink = (userId: string) => `/profile/${userId}`

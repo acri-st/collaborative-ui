@@ -1,0 +1,41 @@
+ARG NODE_BASE_VERSION=18.14.2
+# =============================================
+# -- PHASE 1 : build project
+# =============================================
+FROM harbor.shared.acrist-services.com/proxy-cache/node:$NODE_BASE_VERSION AS builder
+
+WORKDIR /opt/usr/
+# Prepare npm authentication file to allow the access to private libraries
+ARG BRANCH_ID
+ARG BRANCH_NAME
+ARG BUILD_TAG
+
+WORKDIR /desp-ui-fwk/
+COPY desp-ui-fwk/package*.json ./
+RUN npm ci && npm link
+
+WORKDIR /opt/usr/
+COPY frontend/package*.json ./
+COPY frontend/.npmrc .npmrc
+RUN npm ci && npm link @desp-aas/desp-ui-fwk
+
+RUN cd /desp-ui-fwk/
+COPY desp-ui-fwk/ .
+RUN npm run build
+
+RUN cd /opt/usr/
+COPY frontend/ .
+RUN npm run build
+
+# =================================================
+# -- PHASE 2 : copy build then serve on nginx
+# =================================================
+FROM harbor.shared.acrist-services.com/proxy-cache/nginx:1.21.6-alpine
+EXPOSE 80
+# Nginx conf is loaded from the config map in deployment
+WORKDIR /usr/share/nginx/html
+# As we are not running as root we need to grant the user on the docroot
+RUN chown -R nginx .
+# As we are not running as root we can't add more folder to this one
+RUN chown -R 102022  /var/cache/nginx/ /var/log/nginx
+COPY --from=BUILDER /opt/usr/dist/ .

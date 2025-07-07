@@ -1,0 +1,282 @@
+
+#asset-files{
+    min-height: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#asset-files-operations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+    #asset-files-operations .button{
+        align-self: center;
+        justify-self: center;
+    }
+    #asset-files-collaborate-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+        #asset-files-collaborate-container .button{
+            align-self: center;
+            justify-self: center;
+        }
+        #asset-files-collaborate-container .login-required{
+            margin-bottom: 0px;
+        }
+    #asset-files-operations #asset-files-download{
+        margin-left:auto;
+    }
+    #asset-files-operations #asset-files-upload{
+        margin-left:10px;
+    }
+
+
+#asset-files-path{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0px 5px;
+    margin-top:10px;
+}
+
+    .file-asset-file-path.clickable{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+#asset-files-container{
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-color: rgb(var(--background-color-1));
+    box-shadow: 0px 0px 10px 0px black;
+    margin:5px;
+    margin-top:10px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+}
+
+#upload-file-commit-message{
+    margin-top:20px;
+}
+
+.loading-file-item,
+.file-item,
+#asset-files-headers{
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    /* margin:5px; */
+    margin-bottom: 0px;
+}
+.file-item{
+    /* background-color: rgb(var(--background-color-2)); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.113);
+    /* margin:5px; */
+    /* border-radius: 5px; */
+}
+    .file-item.folder{
+        cursor: pointer;
+    }
+
+    .file-item:nth-child(odd){
+        background-color: rgb(var(--background-color-2));
+    }
+    .file-item:last-child{
+        border-bottom: none;
+    }
+
+#asset-files-headers{
+    background-color: rgb(var(--background-color-3));
+    /* box-shadow: 0px 0px 10px 0px black ; */
+    font-weight: 800;
+    font-size: 12px;
+}
+    .asset-files-header{
+        padding:7px 10px;
+        margin:0px 10px;
+    }
+
+    .loading-file-item-value,
+    .file-item-value{
+        margin:10px 10px;
+    }
+        .loading-file-item-value.name,
+        .file-item-value.name,
+        .asset-files-header.name{
+            flex:1;
+            padding-right:5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            min-width: 250px;
+        }
+        .file-item-value.name{
+            display: flex;
+            gap: 5px;
+        }
+            .file-item.folder .file-item-value.name{
+                color: rgb(var(--theme-color-2));
+            }
+            .file-item.back .file-item-value.name{
+                font-size: 1.3em;
+            }
+        .loading-file-item-value.commit-message,
+        .file-item-value.commit-message,
+        .asset-files-header.commit-message{
+            padding-right:5px;            
+            flex:1;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* width: 300px; */
+        }
+        
+        .loading-file-item-value.size,
+        .file-item-value.size,
+        .asset-files-header.size{
+            padding-right:5px;
+            width: 100px;
+            text-align: right;
+            font-size: 0.8em;
+        }
+        .loading-file-item-value.time,
+        .file-item-value.time,
+        .asset-files-header.time{
+            width: 150px;
+            text-align: right;
+            font-size: 0.8em;
+            margin-right:10px;
+            margin-left:0px;
+            padding-left:20px;
+        }
+
+#asset-files-list{
+    overflow: auto;
+}
+.file-item-value{
+    font-size: 13px;
+}
+
+
+/* LOADING */
+.loading-file-item{
+    /* background-color: rgb(var(--loading-color-1)); */
+}
+    .loading-file-item-value{
+        background-color: rgb(var(--loading-color-2));
+        height: 18px;
+    }
+
+
+
+
+
+/* MODAL */
+#upload-restrictions{
+    font-size: 12px;
+    color: rgb(255, 225, 0);
+    background-color: rgb(var(--background-color-2));
+    margin-top:5px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+    #upload-restrictions svg{
+        margin-right:10px;
+        flex:0 0 auto;
+    }
+
+#file-upload-modal{
+    /* display: flex; */
+    height: 100%;
+}
+#file-upload-modal:focus{
+    outline: none;
+}
+#file-upload-content:focus{
+    outline: none;
+}
+
+
+    #file-upload-content{
+        background-color: rgb(var(--background-color-1));
+        width: 800px;
+        margin: auto;
+        margin-top:50px;
+        /* align-self: center; */
+        padding:20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px black;
+        padding-top: 40px;
+        min-height: 0px;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100% - 80px);
+    }
+
+    @media screen and (max-width: 850px) {
+        
+        #file-upload-content{
+            width: calc(100% - 10px);
+        }
+    }
+
+#file-upload-files{
+    background-color: rgb(var(--background-color-2));
+    border-radius: 5px;
+    padding:5px;
+    margin-top:10px;
+    overflow: auto;
+}
+    #file-upload-files.disabled{
+        pointer-events: none;
+        filter: grayscale(1);
+    }
+    #file-upload-input{
+        display: none;
+    }
+
+    .file-upload-file{
+        display: flex;
+        align-items: center;
+        background-color: rgb(var(--background-color-3));
+        margin:5px;
+        padding:5px 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.238);
+        border-radius: 5px;
+    }
+        .file-upload-file .file-upload-file-name{
+            flex:1;
+        }
+        .file-upload-file .file-upload-file-size{
+            margin-right:10px;
+            font-size: 0.8em;
+            font-weight: 800;
+        }
+        .file-upload-file .file-upload-file-remove{
+            font-size: 0.7em;
+        }
+
+#file-upload-buttons{
+    display: flex;
+    margin-top:20px;
+    align-items: center;
+    justify-content: center;
+}
+    #file-select-button{
+        margin-right:10px;
+    }
+    #file-upload-button{
+        margin-left:auto;
+    }

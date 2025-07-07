@@ -1,0 +1,73 @@
+
+#user-profile-avatar{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    font-size: 100px;
+    width: 1em;
+    height: 1em;
+    border-radius: 1000px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    display: block;
+}
+
+    #user-profile-avatar-image{
+        font-size: 100px;
+        width: 1em;
+        height: 1em;
+        border-radius: 1000px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        padding: 0;
+        display: block;
+
+    }
+
+#user-profile-avatar-operations{
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    display: flex;
+    z-index: 20;
+}
+
+    #user-profile-avatar-operations .button{
+        margin-right:3px;
+    }
+
+#user-profile-avatar .dropzone-content{
+    font-size: 11px;
+    padding:10px;
+}
+    #user-profile-avatar .dropzone-content-limits{
+        opacity: .9;
+    }
+        #user-profile-avatar .dropzone-content-dimensions{
+            font-size: 10px;
+            text-align: center;
+        }
+
+#user-profile-avatar .dropzone-area{
+    border-radius: 1000px;
+    outline-width: 2px;
+}
+
+    
+#user-profile-avatar-updating{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    background-color: rgba(4, 10, 24, 0.8);
+    opacity: 1;
+    transition: 0.5s;
+    font-size: 40px;
+}

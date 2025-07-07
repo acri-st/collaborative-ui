@@ -1,0 +1,44 @@
+/*  ====================================== 
+    OVERVIEW 
+    ====================================== */
+#asset-content.overview{
+    min-height: 0px;
+    /* overflow: auto; */
+}
+#asset-description{
+    flex:1;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    min-height: 0px;
+}
+    @media screen  and (max-width: 1150px) {
+        #asset-description .editable-form-field{
+            min-height: 300px;
+        }
+        
+    }
+
+    #asset-external-container{
+        margin-bottom:10px;
+        display: flex;
+        gap:10px;
+    }
+        #asset-external-container .editable-form-field {
+            flex:1;
+        }
+        #asset-external-link{
+            margin-top:5px;
+            display: inline-flex;
+            align-items: center;
+        }
+            #asset-external-link .chevron{
+                margin-left: 5px;
+                transition: var(--transition-time);
+                font-size: 0.7em;
+                display: flex;
+                align-items: center;
+            }
+                #asset-external-link:hover .chevron{
+                    transform: translateX(5px);
+                }

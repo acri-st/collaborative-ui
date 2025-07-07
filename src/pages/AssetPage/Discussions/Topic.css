@@ -1,0 +1,100 @@
+
+#dataset-topic-posts{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
+    padding-right: 10px;
+}
+    #dataset-topic-description{
+        background-color: rgb(var(--background-color-2));
+        padding:20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px black;
+        margin: 0px 2px;
+    }
+        #dataset-topic-title{
+            font-size: 30px;
+            line-height: 1.1em;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        #dataset-topic-information{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+            #dataset-topic-creation-date{
+                font-weight: 800;
+                font-size: 12px;
+            }
+            #dataset-topic-creation-date-separation{
+                font-size: 5px;
+                opacity: 0.5;
+            }
+            #dataset-topic-creation-date-since{
+                font-size: 12px;
+                font-weight: 800;
+                opacity: 0.5;
+            }
+
+
+    .loading-dataset-post,
+    .dataset-post{
+        border-bottom: 2px solid rgb(var(--font-color),0.1);
+        padding:20px 10px;
+    }
+        .loading-dataset-post-information,
+        .dataset-post-information{
+            /* border-top: 2px solid rgb(var(--font-color),0.05); */
+            /* margin-top:10px; */
+            /* padding-top:10px; */
+            display: flex;
+            flex-direction: column;
+            
+            /* align-items: flex-end; */
+        }
+            .loading-dataset-post-information{
+                flex-direction: row;
+                align-items: center;
+            }
+            .dataset-post-user{
+                margin-right:10px;
+            }
+            .loading-discussion-user-post-time{
+                margin-left:10px;
+                height: 15px;
+                background-color: rgb(var(--loading-color-1));
+                width: 100px;
+                border-radius: var(--loading-item-radius);
+            }
+        .loading-dataset-post-message,
+        .dataset-topic-card-latest-post-message,
+        .dataset-post-message{
+            background-color: rgb(var(--background-color-4),0.5);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-size: 14px;
+        }
+
+        .loading-dataset-post-message{
+            background-color: rgb(var(--loading-color-1));
+            height: 30px;
+        }
+
+.dataset-add-post{
+    margin-top: 30px;
+    /* display: flex; */
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 14px;
+
+}
+#dataset-add-post-input{
+    margin-bottom: 10px;
+}
+#dataset-topic-delete{
+    margin-left: auto;
+}

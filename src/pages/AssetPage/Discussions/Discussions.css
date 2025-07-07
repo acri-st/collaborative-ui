@@ -1,0 +1,115 @@
+#discussions{
+    /* padding-bottom:20px; */
+    /* display: flex;
+    flex-direction: column; */
+    min-height: 0px;
+    /* height: 100%; */
+    flex:1 1;
+    width: calc(100% - 10px);
+}
+#discussions > *{
+}
+
+
+.discussion-user{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap:8px;
+}
+    .discussion-user-post-time{
+        opacity: 0.5;
+        /* margin-left:8px; */
+        
+        /* font-size: 0.8em;
+        line-height: 0.8em;
+        padding-top:4px; */
+
+        font-size: 1em;
+        line-height: 1em;
+
+        /* padding-bottom: 5px; */
+
+    }
+
+#create-topic-button{
+}
+    
+#new-topic-button{
+    margin-bottom: 20px;
+}
+
+#dataset-topics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#dataset-topic-posts{
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: 200px;
+    overflow: auto;
+    padding-right: 10px;
+    min-height: 300px;
+}
+    .dataset-post{
+        margin-bottom: 10px;
+    }
+    .dataset-post-information{
+        display: flex;
+        align-items: center;
+    }
+        .dataset-post-user{
+            margin-right:10px;
+        }
+    .dataset-topic-card-latest-post-message,
+    .dataset-post-message{
+        background-color: rgb(var(--background-color-4),0.5);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+.dataset-add-post{
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+
+}
+#dataset-add-post-input{
+    background-color: rgb(var(--background-color-4),0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding:10px;
+    border-radius: 5px;
+    width: 100%;
+    color:rgb(var(--font-color));
+    font-size: 16px;
+    transition: var(--transition-time);
+    margin-right:10px;
+    resize: vertical;
+    height: 150px;
+}
+    #dataset-add-post-input:focus{
+        outline: none;
+        border: 1px solid rgba(255,255,255,0.2);
+    } */
+

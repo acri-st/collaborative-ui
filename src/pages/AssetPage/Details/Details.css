@@ -1,0 +1,115 @@
+
+
+/*  ====================================== 
+    DETAILS 
+    ====================================== */
+#details-content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 100%;
+    min-height: 0;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    gap:20px;
+}
+
+    #details-content .tabs{
+
+    }
+        #details-content .tab{
+            min-width: 150px;
+        }
+    #details-tab-content{
+        flex:1 1 auto;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+
+    @media screen and (max-width: 700px)  {
+        #details-content{
+            flex-direction: column;
+        }
+            #details-content .tabs{
+                flex-direction: row;
+                overflow: auto;
+                gap: 5px;
+                padding-bottom: 5px;
+            }
+                #details-content .tab{
+                    min-width: auto;
+                    font-size: 10px;
+                    padding: 5px 10px;
+                }
+            #details-tab-content{
+                flex:1 0 auto;
+            }
+
+            #asset-content .form-field{
+                flex:1 0 100%;
+            }
+
+            .form-field-value{
+                flex: 1 0 auto;
+            }
+    }
+
+    @media screen and (max-width: 1300px) {
+        #details-content .editable-form-field.textArea{
+            min-height: 300px;
+        }
+        #details-content .editable-form-field .code-area{
+            height: 400px;
+        }
+    }
+
+
+#asset-detail-duration{
+    display: flex;
+    gap:10px;
+    /* align-items: flex-end; */
+}
+    .asset-detail-duration{
+        flex:1;
+    }
+    .asset-detail-duration-time-unit{
+        /* width: 150px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-size: 12px;
+    }
+        /* .asset-detail-duration-time-unit .select{
+            height: 42px;
+        } */
+
+    /* .details-section{
+        min-height: 0;
+        width:  calc(50% - 5px);
+
+        height: calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+    }
+        .details-section .editable-form-field{
+            min-height: 0px;
+        }
+        .details-section .editable-form-field.viewing .form-field-value{
+            overflow: auto;
+        }
+
+
+
+    #details-content.application .details-section,
+    #details-content.model .details-section{
+        height: calc(33.3% - 5px);
+    }
+
+    .details-section.two-thirds{
+        height: calc(66.6% - 5px)!important;
+    } */
+     

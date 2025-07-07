@@ -1,0 +1,63 @@
+#form-page-content{
+    width: 700px;
+    margin:30px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    #form-page-content{
+        width: calc(100% - 10px);
+    }
+}
+
+
+#form-page-title{
+    border: 2px solid rgb(var(--theme-color-1));
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#form-page-subtitle{
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+    
+}
+
+#form-page-form{
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+}
+    #form-page-form-fields{
+        overflow: auto;
+        padding-right:10px;
+    }
+
+    #form-page-finalisation{
+        margin-top: auto;
+    }
+        #form-page-finalisation .message{
+            margin-bottom: 20px;
+        }
+        #form-page-finalisation-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            #form-page-finalisation-buttons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #form-page-finalisation-buttons .button:first-of-type{
+                margin-right:10px;
+            }
