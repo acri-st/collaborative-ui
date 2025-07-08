@@ -19,6 +19,16 @@ Collaborative platform allows users to create or reference different assets in a
 The Microservices that make up the Collaborative platform project are the following: 
 - **Auth** Authentication service tu authenticate users.
 - **Asset management** Asset management system.
+- **Recommendation** Asset recommendation system.
+- **Search** Asset search system.
+- **Post** Post message management system.
+- **Storage** File and Git management system.
+- **Discussions** Discussion management system.
+- **Geo extractor** Asset geographic coordniate extraction system.
+- **Notification** Notification management system.
+- **Moderation** Moderation management system.
+- **Auto moderation management** Automatic moderation management system.
+- **Moderation handling management** Moderation handling system.
 
 ![Collaborative platform Architecture](https://github.com/acri-st/collaborative-ui/blob/main/docs/architecture.png?raw=true)
 
