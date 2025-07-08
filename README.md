@@ -9,9 +9,6 @@
 - [Development](#development)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [Deployment](#deployment)
-- [License](#license)
-- [Support](#support)
 
 ## Introduction
 
@@ -23,7 +20,7 @@ The Microservices that make up the Collaborative platform project are the follow
 - **Auth** Authentication service tu authenticate users.
 - **Asset management** Asset management system.
 
-![Collaborative platform Architecture](https://github.com/acri-st/Collaborative UI-ui/blob/main/docs/architecture.png?raw=true)
+![Collaborative platform Architecture](https://github.com/acri-st/collaborative-ui/blob/main/docs/architecture.png?raw=true)
 
 
 ### What is the Collaborative UI?
