@@ -1,4 +1,4 @@
-# DESP-AAS Collaborative UI
+# Collaborative UI
 
 
 ## Table of Contents
@@ -15,22 +15,22 @@
 
 ## Introduction
 
-###  What is the DESP-AAS Collaborative platform?
+###  What is the Collaborative platform?
 
-DESP-AAS Collaborative platform allows users to create or reference different assets in a comprehensive catalog in earth obervation and geospatial analysis.
+Collaborative platform allows users to create or reference different assets in a comprehensive catalog in earth obervation and geospatial analysis.
 
 The Microservices that make up the Collaborative platform project are the following: 
 - **Auth** Authentication service tu authenticate users.
 - **Asset management** Asset management system.
 
-![DESP-AAS Collaborative platform Architecture](https://github.com/acri-st/DESPAAS-Collaborative UI-ui/blob/development/docs/architecture.png?raw=true)
+![Collaborative platform Architecture](https://github.com/acri-st/Collaborative UI-ui/blob/development/docs/architecture.png?raw=true)
 
 
 ### What is the Collaborative UI?
 
-The Collaborative UI is a web application that interfaces with the microservices that comprise the DESP-AAS ecosystem. It provides users a comprehensible experience to find and use different services of the platform, and has collaboration at its heart.
+The Collaborative UI is a web application that interfaces with the microservices that comprise the ecosystem. It provides users a comprehensible experience to find and use different services of the platform, and has collaboration at its heart.
 
-The Collaborative UI also uses a DESP-AAS common library and framework that contains interfaces to DESP-AAS services and styling called the desp-ui-fwk.
+The Collaborative UI also uses a common library and framework that contains interfaces to services and styling called the desp-ui-fwk.
 
 ## Prerequisites
 
